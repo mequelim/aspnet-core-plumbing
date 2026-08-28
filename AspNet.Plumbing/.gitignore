@@ -1,0 +1,232 @@
+# ============================
+# C# / .NET
+# ============================
+/bin/
+/obj/
+/*.user
+/*.rsuser
+/*.suo
+/*.userosscache
+/*.sln.docstates
+/TestResults/
+/_ReSharper*/
+
+# ============================
+# IDEs and Editors
+# ============================
+# JetBrains (IntelliJ, PyCharm, WebStorm, etc.)
+.idea/
+/*.iml
+/out/
+/workspace.xml
+/tasks.xml
+/dictionaries/
+/*.iws
+
+# Visual Studio Code
+.vscode/
+/*.code-workspace
+
+# Visual Studio
+.vs/
+
+# ============================
+# OS-specific files
+# ============================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Linux
+*~
+.nfs*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# WSL (Windows Subsystem for Linux)
+mnt/
+wsl$
+wsl.conf
+*.wsl
+*.wslg
+*.wslconfig
+
+# ============================
+# Environment and Secrets
+# ============================
+
+# Environment files and credentials
+.env
+# .env.*
+# .env.local
+# .env.development
+# .env.production
+# .env.test
+.envrc
+.direnv
+.config/
+config.local.*
+*.key
+*.pem
+*.crt
+*.pfx
+*.p12
+*.cert
+*.csr
+
+# ============================
+# Logs and Debug
+# ============================
+
+*.log
+*.log.*
+/logs/
+/log/
+debug.log
+error.log
+nohup.out
+
+# ============================
+# Testing and QA
+# ============================
+
+# Test artifacts and coverage reports
+*.coverprofile
+*.cover
+*.lcov
+*.testresult
+*.tmp
+*.trace
+/testdata/
+
+# ============================
+# Docker and Containers
+# ============================
+
+# Docker build and configuration files
+# Dockerfile.dev
+# Dockerfile.test
+# .dockerignore
+# docker-compose.*
+# docker-compose.override.yml
+/docker/
+/data/
+/volumes/
+/.containers/
+/docker-data/
+/container-data/
+/BuildHost-net472
+/BuildHost-netcore
+
+# PIDs and runtime
+*.pid
+
+# ============================
+# Kubernetes and Cloud
+# ============================
+
+# Kubernetes manifests and cache
+*.pod
+*.kube
+.kubeconfig
+# *.yaml~
+# *.yml~
+/helm/
+/charts/
+/manifests/
+/deployments/
+
+# Platform-specific deployments
+.vercel/
+.netlify/
+.now/
+dist/
+
+# ============================
+# Databases and Migrations
+# ============================
+
+# SQL / DB dumps
+# *.sql
+# *.sqlite
+*.db
+*.dump
+
+# Migration temporary files
+migrations/*-tmp.sql
+migrations/*.bak
+migrations/*.tmp
+
+# ============================
+# Dependencies (optional front-end)
+# ============================
+
+# Node.js (if front-end or UI assets exist)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+
+# ============================
+# Backup and Temporary Files
+# ============================
+
+*.bak
+*.old
+*.orig
+*.rej
+*.lock
+*.temp
+
+# ============================
+# Linting, CI, and Static Analysis
+# ============================
+
+lint.log
+.sonar/
+sonar-project.properties
+/coverage-reports/
+.ci/
+.cicd/
+.gitlab/
+.hooks/
+
+# ============================
+# Personal, Local and Misc
+# ============================
+
+# Developer-specific or machine-specific settings
+.local/
+secret/
+keys/
+private/
+__debug_bin
+workspace/
+.project/
+*.userprefs
+
+# ============================
+# Terraform, IaC, and Infra
+# ============================
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Ansible
+*.retry
+.ansible/
+inventory.local
