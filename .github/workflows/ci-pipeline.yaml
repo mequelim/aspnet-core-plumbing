@@ -2,9 +2,9 @@ name: Continuous Integration Pipeline
 
 on:
   push:
-    branches: [ "master", "homol", "development"]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "master", "homol", "development"]
+    branches: [ "master" ]
 
 jobs:
   build:
