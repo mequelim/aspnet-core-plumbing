@@ -23,6 +23,3 @@ jobs:
 
     - name: Build
       run: dotnet build AspNet.Plumbing/AspNet.Plumbing.slnx --no-restore --configuration Release
-
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
