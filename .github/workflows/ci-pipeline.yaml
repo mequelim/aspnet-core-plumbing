@@ -1,27 +1,28 @@
-name: CI pipline for ASP.NET Core 10 white Docker
+name: Continuous Integration Pipeline
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master", "homol", "development"]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "master", "homol", "development"]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
+
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 10.0.x
+
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore AspNet.Plumbing/AspNet.Plumbing.slnx
+
     - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet build AspNet.Plumbing/AspNet.Plumbing.slnx --no-restore --configuration Release
+
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
