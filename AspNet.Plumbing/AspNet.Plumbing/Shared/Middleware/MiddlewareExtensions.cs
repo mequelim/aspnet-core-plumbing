@@ -1,7 +1,7 @@
 ﻿using AspNet.Plumbing.Shared.Middlewares;
 using Microsoft.AspNetCore.Builder;
 
-namespace AspNet.Plumbing.Shared.Middleware
+namespace AspNet.Plumbing.Shared.Extensions
 {
     /// <summary>
     /// Provides extension methods for configuring middleware in an ASP.NET Core application.
